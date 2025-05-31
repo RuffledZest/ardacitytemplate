@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { RiAlarmWarningFill } from 'react-icons/ri';
 
-import TextButton from '@/components/buttons/TextButton';
+
 
 export default function Error({
   error,
@@ -28,9 +28,12 @@ export default function Error({
           <h1 className='mt-8 text-4xl md:text-6xl'>
             Oops, something went wrong!
           </h1>
-          <TextButton variant='basic' onClick={reset} className='mt-4'>
-            Try again
-          </TextButton>
+          <button
+            className='mt-4 rounded-md bg-red-500 px-6 py-3 text-lg font-semibold text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2'
+            onClick={() => reset()}
+          >
+            Try Again
+          </button>
         </div>
       </section>
     </main>

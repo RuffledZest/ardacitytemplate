@@ -4,8 +4,6 @@ import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
 
-import ArrowLink from '@/components/links/ArrowLink';
-import Arlinkdeploybutton from '@/components/buttons/Arlinkdeploybutton';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -36,16 +34,7 @@ export default function HomePage() {
             A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
             Import, Seo, Link component
           </p>
-          <p className='mt-2 text-sm text-gray-700'>
-            <ArrowLink href='https://github.com/ARlinklabs/Nextjs-starter'>
-              See the repository
-            </ArrowLink>
-          </p>
-
-         
-        <div className='mt-6'>
-          <Arlinkdeploybutton />
-          </div>
+          
 
          
         </div>
